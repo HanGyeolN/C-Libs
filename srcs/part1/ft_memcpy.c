@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/24 19:18:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/25 00:07:52 by hna              ###   ########.fr       */
+/*   Created: 2020/02/24 23:51:49 by hna               #+#    #+#             */
+/*   Updated: 2020/02/25 00:13:38 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#include "ft.h"
 
-#include <stdlib.h>
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	const unsigned char	*ptr_src;
+	unsigned char	*ptr_dst;
 
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src , size_t n);
-int		ft_strlen(char *str);
-int		ft_isalpha(int c);
-
-#endif
+	ptr_src = src;
+	ptr_dst = dst;
+	while (n-- > 0)
+		ptr_dst[n] = ptr_src[n];
+	return (dst);
+}
