@@ -6,17 +6,17 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 21:36:56 by hna               #+#    #+#             */
-/*   Updated: 2020/02/24 23:13:06 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/24 23:26:42 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *arr, int c, size_t len)
 {
-	unsigned char	*p = b;
+	unsigned char	*p = arr;
 
 	while (len > 0)
 		p[--len] = c;
-	return (b);
+	return (arr);
 }
