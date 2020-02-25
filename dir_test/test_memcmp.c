@@ -14,7 +14,7 @@ int		main(int argc, char **argv)
 	size = atoi(argv[1]);
 	strcpy(buf, "0123456aaaaa");
 	printf("%s\n", buf);
-	strcpy(buf2, "0123456bbbbb");
+	strcpy(buf2, "0123456AAAAA");
 	printf("%s\n", buf2);
 	ret = memcmp(buf, buf2, size);
 	printf("memcmp(buf, buf2, %d)\n%d\n", size, ret);
