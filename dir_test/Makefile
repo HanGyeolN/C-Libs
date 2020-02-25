@@ -21,7 +21,8 @@ SRC = ft_memset.c	\
 		ft_isascii.c\
 		ft_isprint.c\
 		ft_toupper.c\
-		ft_tolower.c
+		ft_tolower.c\
+		ft_calloc.c
 SRC_DIR = ../srcs/part1
 HEADER_DIR = ../includes
 SRCS = $(addprefix $(SRC_DIR)/, $(SRC))
