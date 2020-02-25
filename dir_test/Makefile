@@ -8,7 +8,8 @@ SRC = ft_memset.c	\
 		ft_memchr.c	\
 		ft_memcmp.c	\
 		ft_strlcpy.c\
-		ft_strlcat.c
+		ft_strlcat.c\
+		ft_strchr.c
 SRC_DIR = ../srcs/part1
 HEADER_DIR = ../includes
 SRCS = $(addprefix $(SRC_DIR)/, $(SRC))
