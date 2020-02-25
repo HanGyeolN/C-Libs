@@ -5,11 +5,11 @@ int		main(void)
 {
 	int		i;
 
-	printf("./test_isalpha\n");
+	printf("./test_isascii\n");
 	i = -10;
 	while (i < 300)
 	{
-		if (isalpha(i) != ft_isalpha(i))
+		if (isascii(i) != ft_isascii(i))
 		{
 			printf("diff in i = %d\n", i);
 			return (0);
