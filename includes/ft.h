@@ -6,7 +6,7 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 19:18:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/25 15:18:25 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/25 16:22:37 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	*ft_memchr(const void *src, int c, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t len);
 int		ft_strlen(char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size);
+size_t	ft_strlcat(char *dst, const char *src, size_t dst_size);
 int		ft_isalpha(int c);
 
 #endif
