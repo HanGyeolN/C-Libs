@@ -13,31 +13,31 @@ int		main(int argc, char **argv)
 		return (0);
 	target = argv[1][0];
 	strcpy(buf, "abcdefgabcdefgmnopqr");
-	ret = strchr(buf, 'f');
+	ret = strrchr(buf, 'f');
 	printf("%s\n", ret);
 	strcpy(buf2, "abcdefgabcdefgmnopqr");
-	ret2 = ft_strchr(buf2, 'f');
+	ret2 = ft_strrchr(buf2, 'f');
 	printf("%s\n", ret2);
 
 	strcpy(buf, "abcdefgabcdefgmnopqr");
-	ret = strchr(buf, 'a');
+	ret = strrchr(buf, 'a');
 	printf("%s\n", ret);
 	strcpy(buf2, "abcdefgabcdefgmnopqr");
-	ret2 = ft_strchr(buf2, 'a');
+	ret2 = ft_strrchr(buf2, 'a');
 	printf("%s\n", ret2);
 
 	strcpy(buf, "abcdefgabcdefgmnopqr");
-	ret = strchr(buf, 'z');
+	ret = strrchr(buf, 'z');
 	printf("%s\n", ret);
 	strcpy(buf2, "abcdefgabcdefgmnopqr");
-	ret2 = ft_strchr(buf2, 'z');
+	ret2 = ft_strrchr(buf2, 'z');
 	printf("%s\n", ret2);
 
 	strcpy(buf, "abcdefgabcdefgmnopqr");
-	ret = strchr(buf, 'r');
+	ret = strrchr(buf, 'r');
 	printf("%s\n", ret);
 	strcpy(buf2, "abcdefgabcdefgmnopqr");
-	ret2 = ft_strchr(buf2, 'r');
+	ret2 = ft_strrchr(buf2, 'r');
 	printf("%s\n", ret2);
 
 	return (0);

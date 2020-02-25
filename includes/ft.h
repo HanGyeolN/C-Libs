@@ -6,7 +6,7 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 19:18:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/25 16:43:26 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/25 16:54:02 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_strlen(char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size);
 size_t	ft_strlcat(char *dst, const char *src, size_t dst_size);
 char	*ft_strchr(const char *src, int c);
+char	*ft_strrchr(const char *src, int c);
 int		ft_isalpha(int c);
 
 #endif
