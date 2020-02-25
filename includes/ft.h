@@ -6,7 +6,7 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 19:18:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/25 21:24:50 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/25 22:55:55 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

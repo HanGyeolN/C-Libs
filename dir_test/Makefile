@@ -1,6 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRC = ft_memset.c	\
+HEADER_DIR = ../includes
+SRC_PART1 = ft_memset.c	\
 		ft_bzero.c	\
 		ft_memcpy.c	\
 		ft_memccpy.c\
@@ -24,10 +25,17 @@ SRC = ft_memset.c	\
 		ft_tolower.c\
 		ft_calloc.c	\
 		ft_strdup.c
-SRC_DIR = ../srcs/part1
-HEADER_DIR = ../includes
-SRCS = $(addprefix $(SRC_DIR)/, $(SRC))
-TESTS = $(SRC:ft_%.c=test_%)
+SRC_PART1_DIR = ../srcs/part1
+SRCS_PART1 = $(addprefix $(SRC_PART1_DIR)/, $(SRC_PART1))
+TEST_PART1 = $(SRC_PART1:ft_%.c=test_%)
+
+SRC_PART2 = ft_substr.c
+SRC_PART2_DIR = ../srcs/part2
+SRCS_PART2 = $(addprefix $(SRC_PART2_DIR)/, $(SRC_PART2))
+TEST_PART2 = $(SRC_PART2:ft_%.c=test_%)
+
+SRCS = $(SRCS_PART1) $(SRCS_PART2)
+TESTS = $(TEST_PART1) $(TEST_PART2)
 
 % : %.c
 	$(CC) $(CFLAGS) $^ $(SRCS) -I $(HEADER_DIR) -o $@
