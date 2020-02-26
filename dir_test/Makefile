@@ -32,7 +32,8 @@ TEST_PART1 = $(SRC_PART1:ft_%.c=test_%)
 SRC_PART2 = ft_substr.c	\
 			ft_strjoin.c\
 			ft_strtrim.c\
-			ft_split.c
+			ft_split.c	\
+			ft_itoa.c
 SRC_PART2_DIR = ../srcs/part2
 SRCS_PART2 = $(addprefix $(SRC_PART2_DIR)/, $(SRC_PART2))
 TEST_PART2 = $(SRC_PART2:ft_%.c=test_%)

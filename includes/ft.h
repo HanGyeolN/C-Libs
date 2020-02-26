@@ -6,7 +6,7 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 19:18:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/26 02:05:36 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/26 13:45:05 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif
