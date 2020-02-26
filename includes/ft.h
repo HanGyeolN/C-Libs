@@ -6,7 +6,7 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 19:18:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/26 15:13:36 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/26 19:05:10 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 #include <unistd.h>
 #include <stdlib.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -50,5 +56,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif

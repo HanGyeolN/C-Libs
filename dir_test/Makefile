@@ -43,8 +43,14 @@ SRC_PART2_DIR = ../srcs/part2
 SRCS_PART2 = $(addprefix $(SRC_PART2_DIR)/, $(SRC_PART2))
 TEST_PART2 = $(SRC_PART2:ft_%.c=test_%)
 
-SRCS = $(SRCS_PART1) $(SRCS_PART2)
-TESTS = $(TEST_PART1) $(TEST_PART2)
+SRC_PART3 = ft_lstnew.c	\
+			ft_lstadd_front.c
+SRC_PART3_DIR = ../srcs/bonus
+SRCS_PART3 = $(addprefix $(SRC_PART3_DIR)/, $(SRC_PART3))
+TEST_PART3 = $(SRC_PART3:ft_%.c=test_%)
+
+SRCS = $(SRCS_PART1) $(SRCS_PART2) $(SRCS_PART3)
+TESTS = $(TEST_PART1) $(TEST_PART2) $(TEST_PART3)
 
 % : %.c
 	$(CC) $(CFLAGS) $^ $(SRCS) -I $(HEADER_DIR) -o $@
