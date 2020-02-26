@@ -50,7 +50,8 @@ SRC_PART3 = ft_lstnew.c	\
 			ft_lstadd_back.c	\
 			ft_lstdelone.c		\
 			ft_lstclear.c		\
-			ft_lstiter.c
+			ft_lstiter.c		\
+			ft_lstmap.c
 
 SRC_PART3_DIR = ../srcs/bonus
 SRCS_PART3 = $(addprefix $(SRC_PART3_DIR)/, $(SRC_PART3))
