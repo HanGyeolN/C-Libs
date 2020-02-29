@@ -6,12 +6,12 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 01:24:11 by hna               #+#    #+#             */
-/*   Updated: 2020/02/26 12:53:25 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/29 13:34:59 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
-#include <stdio.h>
+
 static int	split_len_idx(char *str, char c, int *s_idx)
 {
 	int		i;

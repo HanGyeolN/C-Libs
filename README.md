@@ -1,2 +1,4 @@
-# C-Libs
-my c library
+#C library
+
+## Usage
+$make libft.a
