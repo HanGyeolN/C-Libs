@@ -6,7 +6,7 @@
 /*   By: hna <hna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 00:00:10 by hna               #+#    #+#             */
-/*   Updated: 2020/02/27 00:06:53 by hna              ###   ########.fr       */
+/*   Updated: 2020/02/29 16:40:46 by hna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*cur;
 
-	while ((cur = *lst))
+	cur = *lst;
+	if (lst == 0 || cur == 0)
+		return ;
+	while (cur)
 	{
-		del(cur->content);
-		free(cur);
-		lst = &((*lst)->next);
+		cur = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = cur;
 	}
 }
