@@ -55,7 +55,7 @@ SRC_PART3 = ft_lstnew.c	\
 			ft_lstiter.c		\
 			ft_lstmap.c
 
-SRC_PART3_DIR = ./srcs/bonus
+SRC_PART3_DIR = ./srcs/list
 SRCS_PART3 = $(addprefix $(SRC_PART3_DIR)/, $(SRC_PART3))
 
 SRCS = $(SRCS_PART1) $(SRCS_PART2) $(SRCS_PART3)
